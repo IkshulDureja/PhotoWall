@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, {Component}  from 'react'
+import ReactDOM from 'react-dom'
+import Main from './Components/Main'
+import './styles/stylesheet.css'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//const tasks = ['Take out the trash', 'shovel the driveway', 'walk the dog']
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// FIRST const element = React.createElement('ol', null, tasks.map((tasks, index) => React.createElement('li', { key: index }, tasks)));
+// React.createElement('li', null, 'Take out the trash'),
+//React.createElement('li', null, 'shovel the driveway'),
+//React.createElement('li', null, 'walk the dog')
+//);
+
+// SECOND const element =< div >  
+          //          < h1 > Task List </h1> 
+            //        < ol > 
+              //          {tasks.map((tasks, index) => < li key = { index } > { tasks } </li >)}
+                //    </ ol> 
+                //</div> 
+            //createElements
+            //<
+            //li > { tasks[0] } < /li>  <li > { tasks[1] } < /li > < li > { tasks[2] } < /li> < /ol >
+
+
+
+
+
+
+
+ReactDOM.render(<Main/>, document.getElementById('root'))

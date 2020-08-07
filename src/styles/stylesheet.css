@@ -1,0 +1,70 @@
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'billabongregular';
+    text-align: center;
+    font-size: 13rem;
+    font-weight:100;
+    margin:2rem 0;
+    letter-spacing: -1px;
+    color: black;
+}
+
+@font-face {
+    font-family: 'billabongregular';
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
+    font-weight: normal;
+}
+
+.photoGrid{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figure{
+    flex-basis: calc(33.333% - 4rem);
+    border: 1px solid #d3d3d3;
+    padding:2rem;
+    flex-grow: 1;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.photo{
+    width: calc(100% + 4rem);
+    margin: -2rem 0rem 0rem -2rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.remove-button{
+    flex-basis: 48%;
+    color: red;
+    font-size: 15px;
+    border: 2px solid #f2f2f2;
+    line-height:2;
+    padding: 5px;
+}
+
+.addIcon{
+    margin: 2px auto;
+    display: table;
+    padding: 40px;
+   /* background: url(https://image.flaticon.com/icons/svg/60/60740.svg);*/
+    background-size: contain;
+    border: none;
+}
+
