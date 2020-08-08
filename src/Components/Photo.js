@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 function Photo(props){
     const post = props.post
-    return  <figure className='figure'>  
-    <img className='photo' src={post.imageLink} alt={post.description}/> 
+    return  <figure className='figure'>
+    <img className='photo' src={post.imageLink} alt={post.description}/>
     <figcaption> <p>{post.description}</p></figcaption>
     <div class='button-container'>
     <button className='remove-button' onClick={() => {
@@ -21,8 +21,8 @@ Photo.propTypes = {
 //class Photo extends Component {
   //  render(){
     //    const post = this.props.post
-      //  return <figure className='figure'>  
-        //<img className='photo' src={post.imageLink} alt={post.description}></img> 
+      //  return <figure className='figure'>
+        //<img className='photo' src={post.imageLink} alt={post.description}></img>
         //<figcaption> <p>{post.description}</p></figcaption>
        // <div class='button-container'>
        // <button className='remove-button'>REMOVE</button>

@@ -1,8 +1,8 @@
-import React, {Component}  from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Main from './Components/Main'
+//import Main from './Components/Main'
 import './styles/stylesheet.css'
-
+import UserProfile from './Components/UserProfile'
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //const tasks = ['Take out the trash', 'shovel the driveway', 'walk the dog']
 
@@ -12,20 +12,13 @@ import './styles/stylesheet.css'
 //React.createElement('li', null, 'walk the dog')
 //);
 
-// SECOND const element =< div >  
-          //          < h1 > Task List </h1> 
-            //        < ol > 
+// SECOND const element =< div >
+          //          < h1 > Task List </h1>
+            //        < ol >
               //          {tasks.map((tasks, index) => < li key = { index } > { tasks } </li >)}
-                //    </ ol> 
-                //</div> 
+                //    </ ol>
+                //</div>
             //createElements
             //<
             //li > { tasks[0] } < /li>  <li > { tasks[1] } < /li > < li > { tasks[2] } < /li> < /ol >
-
-
-
-
-
-
-
-ReactDOM.render(<Main/>, document.getElementById('root'))
+ReactDOM.render(<UserProfile />, document.getElementById('root'))
